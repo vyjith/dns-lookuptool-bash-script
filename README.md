@@ -1,5 +1,5 @@
 # dns-lookuptool-bash-script
-[![Build](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
 sudo apt -y install whois
 
