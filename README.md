@@ -1,5 +1,5 @@
 # dns-lookuptool-bash-script
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+:+1: I beilve this is good script for Linux admin :shipit:
 
 sudo apt -y install whois
 
