@@ -1,9 +1,6 @@
-# dns-lookuptool-bash-script
-:+1: I beilve this is good script for Linux admin :shipit:
+# DNS lookup script
+I beilve this is good script for Linux admin :+1: :shipit:
 
-sudo apt -y install whois
-
-Please note that this script only works on the linux machine
 
 ## **Description**
 -------------------------------------------------- 
