@@ -182,3 +182,10 @@ fi
 ## Conclusion
 
 It is a simple bash script to verify domain DNS information with one click. Please contact me when you encounter any difficulty error while running this script. Thank you!
+
+### ⚙️ Connect with Me
+<p align="center">
+<a href="https://www.instagram.com/iamvyjith/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/vyjith-ks-3bb8b7173/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
+
