@@ -16,3 +16,5 @@ _For-RedHat-Distributer and Debian-Distributer_
 ``` javascript 
 sudo yum -y install whois
 ```
+
+>Please note that this script is not supporting with macOS and windows
