@@ -174,7 +174,7 @@ else echo -e "\e[31m\e[1m Please enter a valid domain $domain \e[0m"
 fi
 ```
 
-## Used commands
+### Used commands
 
-1. _Dig_
-2. _Whois_
+- _dig_
+- _whois_
