@@ -11,10 +11,24 @@ I think this script is very useful for the Linux support admin. In this script, 
 
 ## Pre-Requestes (Packages Installation)
 -------------------------------------------------- 
-_For-RedHat-Distributer and Debian-Distributer_
+_For-RedHat-Distributer_
 
 ``` javascript 
+sudo yum -y install git 
+sudo yum -y install bind-utils
+sudo yum -y install whois
+```
+ _For Debian-Distributer_
+ 
+ ``` javascript 
+sudo yum -y install git 
+sudo yum -y install bind-utils
 sudo yum -y install whois
 ```
 
 >Please note that this script is not supporting with macOS and windows
+
+-------------------------------------------------- 
+
+# How to use this script
+
