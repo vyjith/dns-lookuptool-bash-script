@@ -34,7 +34,7 @@ sudo yum -y install whois
 ``` javascript 
 git clone https://github.com/vyjith/dns-lookuptool-bash-script.git
 cd dns-lookuptool-bash-script
-chmod +x dt.sh
+chmod +x di.sh
 ```
 _Alias Assgning for this script_
 ``` javascript 
@@ -46,7 +46,7 @@ source ~/.bashrc
 ``` javascript 
 dg facebook.com
 or 
-bash dt.sh facebook.com
+bash di.sh facebook.com
 ``` 
 
 ## Output
