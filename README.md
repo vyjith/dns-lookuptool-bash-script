@@ -32,3 +32,8 @@ sudo yum -y install whois
 
 ## How to use this script
 
+``` javascript 
+https://github.com/vyjith/dns-lookuptool-bash-script.git
+cd dns-lookuptool-bash-script
+chmod +x dt.sh
+```
