@@ -1,5 +1,5 @@
 # DNS lookup script
-I beilve this is good script for Linux admin :+1: :shipit:
+:+1: I beilve this is good script for Linux admin  :shipit:
 
 
 ## **Description**
