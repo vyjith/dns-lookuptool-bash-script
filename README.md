@@ -179,4 +179,6 @@ else echo -e "\e[31m\e[1m Please enter a valid domain $domain \e[0m"
 fi
 ```
 
+## Conclusion
 
+It is a simple bash script to verify domain DNS information with one click. Please contact me when you encounter any difficulty error while running this script. Thank you!
