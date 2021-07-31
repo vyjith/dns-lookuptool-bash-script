@@ -22,7 +22,7 @@ sudo yum -y install whois
  
  ``` javascript 
 sudo yum -y install git 
-sudo yum -y install bind-utils
+sudo yum -y install dnsutils
 sudo yum -y install whois
 ```
 
