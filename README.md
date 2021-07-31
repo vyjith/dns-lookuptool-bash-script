@@ -1,4 +1,5 @@
 # dns-lookuptool-bash-script
+[![Build](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 sudo apt -y install whois
 
