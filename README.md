@@ -30,5 +30,5 @@ sudo yum -y install whois
 
 -------------------------------------------------- 
 
-# How to use this script
+## How to use this script
 
