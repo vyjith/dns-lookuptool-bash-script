@@ -11,6 +11,7 @@ I think this script is very useful for the Linux support admin. In this script, 
 
 ## Pre-Requestes (Packages Installation)
 -------------------------------------------------- 
+_For-RedHat-Distributer and Debian-Distributer
 
 ``` javascript 
 sudo yum -y install whois
