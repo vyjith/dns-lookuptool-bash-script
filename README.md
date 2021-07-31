@@ -176,5 +176,5 @@ fi
 
 ## Used commands
 
-1. Dig
-2. Whois
+1. _Dig_
+2. _Whois_
