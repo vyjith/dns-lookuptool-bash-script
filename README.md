@@ -12,4 +12,4 @@ I think this script is very useful for the Linux support admin. In this script, 
 ## Pre-Requestes (Packages Installation)
 -------------------------------------------------- 
 
-<copy-button> vyjith </copy-button>
+[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
