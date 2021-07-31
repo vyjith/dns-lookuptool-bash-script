@@ -43,12 +43,14 @@ _Alias Assgning for this script_
 ``` javascript 
 echo "alias dg='bash $(pwd)/di.sh'" >> ~/.bashrc
 source ~/.bashrc
+```
 
 ## Script Running
 ``` javascript 
 dg facebook.com
 or 
 bash dt.sh facebook.com
+``` 
 
 ## Output
 
