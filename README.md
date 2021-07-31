@@ -103,6 +103,11 @@ facebook.com.           6150    IN      TXT     "google-site-verification=wdH5DT
 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ```
+### Used commands
+
+- _dig_
+- _whois_
+
 ## Behind the code
 ```sh
 #! /bin/bash
@@ -174,7 +179,4 @@ else echo -e "\e[31m\e[1m Please enter a valid domain $domain \e[0m"
 fi
 ```
 
-### Used commands
 
-- _dig_
-- _whois_
