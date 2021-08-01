@@ -1,6 +1,7 @@
 # DNS lookup script
   
-
+  [![ng-remote-logging](https://snyk.io/advisor/npm-package/ng-remote-logging/badge.svg)](https://snyk.io/advisor/npm-package/ng-remote-logging)
+  
 ## **Description**
 -------------------------------------------------- 
 
