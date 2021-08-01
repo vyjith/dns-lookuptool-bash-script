@@ -14,6 +14,7 @@ _For-RedHat-Distributer_
 ``` javascript 
 sudo yum -y install git 
 sudo yum -y install bind-utils
+sudo yum -y install curl
 sudo yum -y install whois
 ```
  _For Debian-Distributer_
@@ -21,6 +22,7 @@ sudo yum -y install whois
  ``` javascript 
 sudo yum -y install git 
 sudo yum -y install dnsutils
+yum -y install curl
 sudo yum -y install whois
 ```
 
