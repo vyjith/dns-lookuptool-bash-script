@@ -32,7 +32,7 @@ echo
         echo
         MX=`dig +nocmd $domain_name mx +noall +answer | grep ^"$domain_name" | grep MX | awk {'print $6'} | rev | cut -c2- | rev | head -n1`
         echo "Mail IP is:" `dig $MX a +short`
-        Who=`dig $MX +short 2>&1` 
+        Who=`dig $MX +short` 
         echo
         echo "The $domain_name MX record is pointing to: " `whois $Who 2>&1 | grep -i "OrgName" | cut -d ":" -f2`
 echo
