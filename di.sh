@@ -32,7 +32,7 @@ echo
         echo
         MX=`dig +nocmd $domain_name mx +noall +answer | grep ^"$domain_name" | grep MX | awk {'print $6'} | rev | cut -c2- | rev | head -n1`
         echo "Mail IP is:" `dig $MX a +short`
-        Who=`dig $MX +short`
+        Who=`dig $MX +short 2>&1` 
         echo
         echo "The $domain_name MX record is pointing to: " `whois $Who 2>&1 | grep -i "OrgName" | cut -d ":" -f2`
 echo
@@ -57,7 +57,7 @@ echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                         echo "  Whois informaion of the $domain_name"
                                 echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
 
-        whois $domain_name | grep -E "Registrar:|Registry Expiry Date:|Registrar URL:|Name Server:|Expiration Date:|URL:"
+        whois $domain_name 2>&1 | grep -E "Registrar:|Registry Expiry Date:|Registrar URL:|Name Server:|Expiration Date:|URL:"
 echo
 echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
         else
