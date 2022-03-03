@@ -32,7 +32,7 @@ echo
         echo
         MX=`dig +nocmd $domain_name mx +noall +answer | grep ^"$domain_name" | grep MX | awk {'print $6'} | rev | cut -c2- | rev | head -n1`
         echo "Mail IP is:" `dig $MX a +short`
-        Who=`dig $MX +short` 
+        Who=`dig $MX +short`
         echo
         echo "The $domain_name MX record is pointing to: " `whois $Who 2>&1 | grep -i "OrgName" | cut -d ":" -f2`
 echo
@@ -60,9 +60,37 @@ echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         whois $domain_name 2>&1 | grep -E "Registrar:|Registry Expiry Date:|Registrar URL:|Name Server:|Expiration Date:|URL:"
 echo
 echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
+
+echo ""
+echo ""
+echo -e "\e[31m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
+        echo " Here we are just comparing the nameserver info in the DNS zone and Whois"
+                echo -e "\e[31m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
+echo ""
+                echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
+                        echo "  Nameserver details $domain_name in DNS zone"
+                                echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
+echo ""
+NS=`dig $domain_name ns +short | sort`
+IP=`dig $NS a +short`
+for p in $NS; do echo "   NameServer : " $p; done
+echo ""
+for i in $IP; do echo -e "   The $i is Pointing to :" `whois $i 2>&1 | grep -i "OrgName" | cut -d ":" -f2`; done
+echo ""
+                echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
+                        echo "  Nameserver details $domain_name in whois"
+                                echo  -e "\e[32m\e[1m ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\e[0m"
+echo ""
+whois $domain_name 2>&1 | grep -E "Name Server:"
+IPS=`whois $domain_name 2>&1 | grep -E "Name Server:" | awk {'print $3'} | sort`
+echo ""
+for j in $(dig $IPS a +short); do echo -e "   The $j is Pointing to :" `whois $j 2>&1 | grep -i "OrgName" | cut -d ":" -f2`; done
+echo ""
+
         else
                 echo -e "\e[31m\e[1mPlease enter a FQDN domain like ('Google.com). Also, don't use protocol (http://,https://) and symbol's\e[0m"
         fi
 else
         echo -e "\e[31m\e[1mOops!! You didn't give any input. Please give the domain name. \e[0m"
 fi
+
