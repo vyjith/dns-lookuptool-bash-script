@@ -64,8 +64,8 @@ bash di.sh geekflare.com
 
 geekflare.com.          30      IN      A       104.27.118.115
 geekflare.com.          30      IN      A       104.27.119.115
-geekflare.com.          84292   IN      NS      olga.ns.cloudflare.com.
-geekflare.com.          84292   IN      NS      todd.ns.cloudflare.com.
+geekflare.com.          86400   IN      NS      olga.ns.cloudflare.com.
+geekflare.com.          86400   IN      NS      todd.ns.cloudflare.com.
 
 The geekflare.com A record is pointing to :  Cloudflare, Inc.
 
@@ -81,7 +81,7 @@ geekflare.com.          300     IN      MX      5 alt2.aspmx.l.google.com.
 geekflare.com.          300     IN      MX      10 alt3.aspmx.l.google.com.
 geekflare.com.          300     IN      MX      10 alt4.aspmx.l.google.com.
 
-Mail IP is: 142.250.113.27
+Mail IP is: 142.250.112.26
 
 The geekflare.com MX record is pointing to:  Google LLC
 
@@ -92,10 +92,11 @@ The geekflare.com MX record is pointing to:  Google LLC
 geekflare.com.          300     IN      TXT     "google-site-verification=MRSwa454qay1S6pwwixzoiZl08kfJfkhiQIslhok3-A"
 geekflare.com.          300     IN      TXT     "google-site-verification=7QXbgb492Y5NVyWzSAgAScfUV3XIAGTKKZfdpCvcaGM"
 geekflare.com.          300     IN      TXT     "yandex-verification: 42f25bad396e79f5"
-geekflare.com.          300     IN      TXT     "v=spf1 include:_spf.google.com include:mailgun.org ~all"
+geekflare.com.          300     IN      TXT     "v=spf1 include:_spf.google.com include:mailgun.org include:zcsend.net ~all"
 geekflare.com.          300     IN      TXT     "ahrefs-site-verification_8eefbd2fe43a8728b6fd14a393e2aff77b671e41615d2c1c6fc365ec33a4d6d0"
+geekflare.com.          300     IN      TXT     "ca3-7fbfaa573ba248ddb17a618e5b46ca01"
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  PTR record of the 104.27.118.115
+  PTR record of the 104.27.119.115
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -109,6 +110,40 @@ geekflare.com.          300     IN      TXT     "ahrefs-site-verification_8eefbd
    Name Server: TODD.NS.CLOUDFLARE.COM
 
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Here we are just comparing the nameserver info in the DNS zone and Whois
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Nameserver details geekflare.com in DNS zone
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   NameServer :  olga.ns.cloudflare.com.
+   NameServer :  todd.ns.cloudflare.com.
+
+   The 108.162.192.137 is Pointing to : Cloudflare, Inc.
+   The 173.245.58.137 is Pointing to : Cloudflare, Inc.
+   The 172.64.32.137 is Pointing to : Cloudflare, Inc.
+   The 172.64.33.146 is Pointing to : Cloudflare, Inc.
+   The 108.162.193.146 is Pointing to : Cloudflare, Inc.
+   The 173.245.59.146 is Pointing to : Cloudflare, Inc.
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Nameserver details geekflare.com in whois
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   Name Server: OLGA.NS.CLOUDFLARE.COM
+   Name Server: TODD.NS.CLOUDFLARE.COM
+
+   The 173.245.58.137 is Pointing to : Cloudflare, Inc.
+   The 108.162.192.137 is Pointing to : Cloudflare, Inc.
+   The 172.64.32.137 is Pointing to : Cloudflare, Inc.
+   The 172.64.33.146 is Pointing to : Cloudflare, Inc.
+   The 108.162.193.146 is Pointing to : Cloudflare, Inc.
+   The 173.245.59.146 is Pointing to : Cloudflare, Inc.
+
 
 ```
 ### Used commands
