@@ -20,10 +20,10 @@ sudo yum -y install whois
  _For Debian-Distributer_
  
  ``` javascript 
-sudo yum -y install git 
-sudo yum -y install dnsutils
-sudo yum -y install curl
-sudo yum -y install whois
+sudo apt -y install git 
+sudo apt -y install dnsutils
+sudo apt -y install curl
+sudo apt -y install whois
 ```
 
 >Please note that this script is not supporting with macOS and windows
